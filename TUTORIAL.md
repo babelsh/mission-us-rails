@@ -162,7 +162,7 @@ end
 bin/rails db:migrate
 ```
 
-## Configure Devise
+## Configure Devise ([tutorial](https://guides.railsgirls.com/devise))
 
 - add gem to gemfile
 
