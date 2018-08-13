@@ -4,12 +4,12 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
   username: postgres
-  password: <%= ENV['MISSION-US-RAILS_DATABASE_PASSWORD'] || 'postgresql' %>
+  password: <%= ENV['MISSION-US-RAILS_DATABASE_PASSWORD'] || 'postgres' %>
 
 development:
   <<: *default
   database: mission-us-rails_development
-  
+
 test:
   <<: *default
   database: mission-us-rails_test
