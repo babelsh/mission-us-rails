@@ -1,6 +1,8 @@
 addons:
   postgresql: 10
 language: ruby
+before_script:
+  cp config/database.example.yml config/database.yml
 rvm:
   - 2.5.1
 script:
