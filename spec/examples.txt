@@ -1,6 +1,6 @@
 example_id                                             | status  | run_time        |
 ------------------------------------------------------ | ------- | --------------- |
-./spec/controllers/dashboard_controller_spec.rb[1:1:1] | failed  | 0.00244 seconds |
-./spec/helpers/dashboard_helper_spec.rb[1:1]           | pending | 0 seconds       |
-./spec/models/user_spec.rb[1:1]                        | pending | 0.00002 seconds |
-./spec/views/dashboard/index.html.erb_spec.rb[1:1]     | pending | 0.00001 seconds |
+./spec/controllers/dashboard_controller_spec.rb[1:1:1] | failed  | 0.0079 seconds  |
+./spec/helpers/dashboard_helper_spec.rb[1:1]           | pending | 0.00003 seconds |
+./spec/models/user_spec.rb[1:1]                        | pending | 0.00001 seconds |
+./spec/views/dashboard/index.html.erb_spec.rb[1:1]     | pending | 0.00006 seconds |
