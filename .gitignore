@@ -30,3 +30,6 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore local database settings
+/config/database.yml
