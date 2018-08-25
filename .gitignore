@@ -33,3 +33,4 @@ yarn-debug.log*
 
 # Ignore local database settings
 /config/database.yml
+.env
