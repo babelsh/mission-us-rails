@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './components/app.vue'
-import Vuetify from "vuetify";
+import Vuetify from 'vuetify';
 
 import colors from 'vuetify/es5/util/colors';
 
