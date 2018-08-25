@@ -10,7 +10,8 @@ env:
 language: ruby
 before_script:
   - cp config/database.example.yml config/database.yml
-  - psql -c 'create database mission_us_test;' -U postgres
+  - psql -c "create database mission_us_test;" -U postgres
+  - psql -c "CREATE USER postgres WITH PASSWORD 'postgres';" -U postgres
 rvm:
   - 2.5.1
 services:
