@@ -1,58 +1,24 @@
-# Mission Us
+# README
 
-- [Dependencies](#dependencies)
-- [Setup](#setup)
-- [Development](#development)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Dependencies
+Things you may want to cover:
 
-- Ruby >= 2.5.1
-- PostgreSQL 9.6.1
+* Ruby version
 
-### MacOS
+* System dependencies
 
-```sh
-brew update
-brew install postgres
-brew install yarn
-gem install bundler
-```
+* Configuration
 
-### Ubuntu
+* Database creation
 
-```sh
-apt-get update
-apt-get install postgresql postgresql-contrib postgresql-server-dev-all cmake
-gem install bundler
-```
+* Database initialization
 
-## Docker
+* How to run the test suite
 
-WIP
+* Services (job queues, cache servers, search engines, etc.)
 
-## Setup
+* Deployment instructions
 
-```sh
-bundle install
-yarn install
-cp config/database.example.yml config/database.yml
-
-echo "POSTGRESQL_PASSWORD='YourPassword'" >> .env
-echo "POSTGRESQL_USERNAME='YourUserName'" >> .env
-
-bin/rails db:setup
-```
-
-## Development
-
-Run the local server at http://localhost:3000 with:
-
-```sh
-bin/rails s
-```
-
-Run tests with:
-
-```sh
-rspec
-```
+* ...
