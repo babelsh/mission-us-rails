@@ -1,12 +1,22 @@
 addons:
-  postgresql: 10
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
+env:
+  global:
+  - PGPORT=5433
 language: ruby
 before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.example.yml config/database.yml
+  - sudo sed -i -e '/local.*peer/s/postgres/all/' -e 's/peer\|md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
+  - sudo service postgresql restart
+  - sudo psql -c "create database mission_us_test;" -U postgres
 rvm:
   - 2.5.1
+services:
+  - postgresql
 script:
-  - bin/rake db:create RAILS_ENV=test
   - bin/rake db:migrate RAILS_ENV=test
   - bin/rake
