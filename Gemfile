@@ -18,6 +18,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_racer'
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap', '~> 4.1.1'
+gem 'material-sass', '~> 4.1.1'
+gem 'jquery-rails'
 
 gem 'rails-i18n'
 
