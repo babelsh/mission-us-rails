@@ -22,6 +22,6 @@ job:
     - stage: test
       script:
         - bin/rake db:migrate RAILS_ENV=test
-        - yarn test
+        - jest
         - bin/rake
 
