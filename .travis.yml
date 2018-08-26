@@ -17,16 +17,17 @@ services:
 job:
   include:
     - stage: test
-        language: ruby
-        rvm:
-          - 2.5.1
-        script:
-          - bin/rake db:migrate RAILS_ENV=test
-          - bin/rake
+      language: ruby
+      rvm:
+        - 2.5.1
+      script:
+        - bin/rake db:migrate RAILS_ENV=test
+        - bin/rake
     - stage: jest
-        language: node_js
-        node_js: 10.8
-        cache:
-          yarn: true
-        script:
-          - yarn test
+      language: node_js
+      node_js: 10.8
+      cache:
+        yarn: true
+      script:
+        - yarn test
+
