@@ -8,7 +8,7 @@
 ## Dependencies
 
 - Ruby >= 2.5.1
-- PostgreSQL 9.6.1
+- PostgreSQL 10.4
 
 ### MacOS
 
