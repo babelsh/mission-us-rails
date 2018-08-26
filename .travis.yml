@@ -32,10 +32,6 @@ env:
   - PGPORT=5433
 services:
 - postgresql
-deploy:
-  provider: heroku
-  api_key:
-    secure: hM93ke6MIEL8PyGhOmMM5no1g+I/JqzRB4DdBbH7d8N5OsMbst28t1SPMnEkZWywTJjUbMWxeDvgci1HLuDtPAsdhkcPjXseMQ4Km4dQbpvQdgvUwYOlx3i/v0REcTrz4qkEcW0Mh0tPd6eAgzQG2CaH472iRGKF+8qD+/kqHrPwyAMsSZ2IPUZ0rdJVeE9D6tWdlnnWuMnZrb9+WblOx7DhM5fMF+YsfgGWIU37LXUFfu0M9hTASVfUiESy3Bp9jJEw6QaC7edg/30dkxhPnJoi9caZVbZJnCz6LWwAKVVsxqCYwJwOPbLTS/8MC94jIPuQRSL4ta70VzhTFI3nZKGiS7k4OgOdOL4gFQZURMNMYuDMMeu6/1Gk0i/XdbEvYknd4bthH1ftmxgg9AcEpaQ7H1eKDLYV4FCqmjk1FhTGMCb8LE8Y/6uMT5U8FgMafqRngfnYIKamA73lgju/cFEuiz8puW0Gm1Oej4wf/n88JnkNQW4PrnRkDC6LmLpA/4DndvC+tsRyxaCaQEfzCUBDd9TyynvAQPak3LT81NY+4/7wN34QQL65NoLWk2eyuiNVF07AuJ1NsJPPVyVYbvN0kD+UvAMTCARzJGB903ZSpGSjiM5AP5GaLLUuowITRohrSgR1oRkYUJZAkxEqGBA9x9J9EZCfSOPV8YRHN08=
-  app: mission-us-staging
-  on:
-    repo: babelsh/mission-us-rails
+branches:
+  only:
+    - master
