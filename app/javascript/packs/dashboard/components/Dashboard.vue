@@ -12,7 +12,7 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap align-center>
         <v-flex xs12 md6 lg6>
-          <v-date-picker 
+          <v-date-picker
             v-model="date"
             locale="pt-br"
             no-title
