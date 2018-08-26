@@ -56,8 +56,6 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  config.i18n.available_locales = ['pt-BR', 'en-US']
-
   # Raises error for missing translations
   config.action_view.raise_on_missing_translations = true
 
