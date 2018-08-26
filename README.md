@@ -1,24 +1,59 @@
-# README
+# Mission Us
+[![Build Status](https://travis-ci.org/babelsh/mission-us-rails.svg?branch=master)](https://travis-ci.org/babelsh/mission-us-rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [Dependencies](#dependencies)
+- [Setup](#setup)
+- [Development](#development)
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+- Ruby >= 2.5.1
+- PostgreSQL 10.4
 
-* System dependencies
+### MacOS
 
-* Configuration
+```sh
+brew update
+brew install postgres
+brew install yarn
+gem install bundler
+```
 
-* Database creation
+### Ubuntu
 
-* Database initialization
+```sh
+apt-get update
+apt-get install postgresql postgresql-contrib postgresql-server-dev-all cmake
+gem install bundler
+```
 
-* How to run the test suite
+## Docker
 
-* Services (job queues, cache servers, search engines, etc.)
+WIP
 
-* Deployment instructions
+## Setup
 
-* ...
+```sh
+bundle install
+yarn install
+cp config/database.example.yml config/database.yml
+
+echo "POSTGRESQL_PASSWORD='YourPassword'" >> .env
+echo "POSTGRESQL_USERNAME='YourUserName'" >> .env
+
+bin/rails db:setup
+```
+
+## Development
+
+Run the local server at http://localhost:3000 with:
+
+```sh
+bin/rails s
+```
+
+Run tests with:
+
+```sh
+rspec
+```
