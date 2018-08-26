@@ -85,6 +85,7 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+  config.i18n.fallbacks = true
   config.i18n.available_locales = ['pt-BR', 'en-US']
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
