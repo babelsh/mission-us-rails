@@ -17,11 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_racer'
-gem 'jquery-rails'
-gem 'bootstrap',     '~> 4.1.1'
-gem 'material-sass', '~> 4.1.1'
 gem 'sass-rails', '~> 5.0'
-gem 'font-awesome-sass'
 
 gem 'rails-i18n'
 
