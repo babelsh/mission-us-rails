@@ -10,7 +10,6 @@ gem 'faker'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.1'
-gem "rspec-rails"
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 
@@ -29,6 +28,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem "database_cleaner"
+  gem "rspec-rails"
   gem "travis"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

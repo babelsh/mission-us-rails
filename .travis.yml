@@ -20,7 +20,7 @@ before_script:
 script:
 - bin/rake db:migrate RAILS_ENV=test
 - yarn test
-- bundle exec rake spec
+- bundle exec rake
 addons:
   postgresql: '10'
   apt:
