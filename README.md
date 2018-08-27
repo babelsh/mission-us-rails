@@ -53,7 +53,7 @@ bin/rails db:seed
 
 ### Test
 
-We use rspec framework to test our rails applicatio. To test you can run:
+We use rspec framework to test our rails application. To test you can run:
 
 ```sh
 bundle exec rspec
@@ -67,7 +67,7 @@ To test our js files we use jest framework. Run with:
 yarn test
 ```
 
-and you change some component you should to update de snapshot with:
+and if you change some component you should to update de snapshot with:
 
 ```sh
 yarn test -u <path_to_test_file_changed>
