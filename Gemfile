@@ -48,6 +48,7 @@ end
 
 group :production, :staging do
   gem 'rails_12factor'
+  gem "rspec-rails"
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
