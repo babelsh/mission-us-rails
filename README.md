@@ -67,7 +67,7 @@ To test our js files we use jest framework. Run with:
 yarn test
 ```
 
-and if you change some component you should to update de snapshot with:
+And if you change any component, you should update the snapshot with:
 
 ```sh
 yarn test -u <path_to_test_file_changed>
