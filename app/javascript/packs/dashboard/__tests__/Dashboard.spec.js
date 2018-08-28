@@ -1,6 +1,8 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Dashboard from '../components/Dashboard.vue'
 import Vuetify from 'vuetify'
+
+import Dashboard from '../components/Dashboard'
+
 
 describe('Dashboard.vue', () => {
   let localVue

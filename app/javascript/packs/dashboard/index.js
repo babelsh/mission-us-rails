@@ -1,6 +1,8 @@
 import Vue from 'vue'
-import Dashboard from './components/Dashboard.vue'
 import Vuetify from 'vuetify'
+
+
+import Dashboard from './components/Dashboard'
 
 Vue.use(Vuetify)
 
