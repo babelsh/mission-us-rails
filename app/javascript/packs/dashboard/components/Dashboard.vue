@@ -1,13 +1,7 @@
 <template>
   <v-app>
-    <v-container style="max-width: 100%">
-      <v-carousel style="height: 250px">
-        <v-carousel-item
-          v-for="(item,i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item>
-      </v-carousel>
+    <v-container fluid>
+      <trail isActive isFavorite title="Trilha de introdução"></trail>
     </v-container>
     <v-container fluid grid-list-md>
       <v-layout row wrap align-center>
@@ -33,7 +27,7 @@
               {{ progress }}%
             </v-progress-circular>
           </div>
-          <div>
+          <div class="text-current-activity">
             Conclusão das atividades da semana
           </div>
         </v-flex>
@@ -88,8 +82,15 @@ export default {
         },
       ],
       date: '2018-08-20',
-      progress: 37,
+      progress: 67,
     };
   },
 };
 </script>
+
+<style>
+.text-current-activity {
+  padding-top: 10px;
+  font-size: 14px;
+}
+</style>
