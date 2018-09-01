@@ -1,7 +1,12 @@
 <template>
   <v-app>
     <v-container fluid>
-      <trail isActive isFavorite title="Trilha de introdução"></trail>
+      <trail
+        isActive
+        isFavorite
+        title="Trilha de introdução"
+        :source="source"
+      ></trail>
     </v-container>
     <v-container fluid grid-list-md>
       <v-layout row wrap align-center>
@@ -36,7 +41,7 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex xs6 md4 lg4 v-for="trail in trails" :key="trail.name">
-          <trail :title="trail.name" />
+          <trail :title="trail.name" :source="source"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -83,6 +88,7 @@ export default {
       ],
       date: '2018-08-20',
       progress: 67,
+      source: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
     };
   },
 };

@@ -3,7 +3,7 @@
     <v-card-media
       class="white--text"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      :src="source"
     >
       <v-container fill-height fluid>
         <v-layout fill-height>
@@ -48,6 +48,7 @@ export default {
       default: false,
     },
     title: String,
+    source: String,
   },
   computed: {
     favoriteMarked() {
