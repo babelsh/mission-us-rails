@@ -13,10 +13,8 @@ describe('Dashboard.vue', () => {
   })
 
   it('renders the Dashboard component', () => {
-
     const wrapper = shallowMount(Dashboard, { localVue })
 
     expect(wrapper).toMatchSnapshot()
-
   })
 })
